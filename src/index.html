@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Landing Page</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="container__header">
+    <div class="header__content">
+      <h1 class="header__container-logo">
+        <img src="../imgs/Logo.svg" alt="Company Logo" />
+        <span class="header__title">15th Annlversary</span>
+      </h1>
+    </div>
+    <div class="header__content-body">
+      <div class="banner__content">
+        <div class="name_header">
+          <h2 style="font-size: 70px">ARON hành trình 15 năm</h2>
+          <h3 style="font-size: 36px">Nhận & Cảm</h3>
+        </div>
+        <div class="header__countdown">
+          <div id="days">30 <span>ngày</span></div>
+          <div id="hours">720 <span>giờ</span></div>
+          <div id="minutes">0 <span>phút</span></div>
+        
+        </div>
+        <button class="header__button">
+          <span class="header__button-text">Xác Nhận tham dự</span>
+          <div><img src="../imgs/arrow.png" alt="Arrow" /></div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="about__content-header">
+        <h2>Thư Viện Hình Ảnh</h2>
+        <p>Cùng nhìn lại cặng đường 15 năm ...</p>
+      </div>
+      <ul class="about__content-list">
+        <li class="image_item">
+          <img class="image__company" src="../imgs/item1.png" alt="image_company" />
+          <img class="image__company-two" src="../imgs/item2.png" alt="image_company" />
+        </li>
+        <li class="image_item">
+          <img class="image__company-three" src="../imgs/item3.png" alt="image_company" />
+        </li>
+        <li class="image_item">
+          <img class="image__company image__company-last" src="../imgs/item4.png" alt="image_company" />
+          <img class="image__company image__company-last2" src="../imgs/item5.png" alt="image_company" />
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Khách Hàng</h2>
+      <p class="customer__description">
+        An anniversary is the date on which an event took place or
+        an institution was founded in a previous year, and may also refer to
+        the commemoration or
+      </p>
+      <div class="contact__container-content">
+        <ul class="customer_content">
+          <li><img src="../imgs/BG_RGB_Garuda_800px-1.jpg" /></li>
+          <li><img src="../imgs/image2.jpg" /></li>
+          <li><img src="../imgs/image3.jpg" /></li>
+          <li><img src="../imgs/image4.jpg" /></li>
+          <li><img src="../imgs/image5.jpg" /></li>
+          <li><img src="../imgs/image6.jpg" /></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer__container">
+    <div>
+      <img src="../imgs/imagebtm.svg" alt="Company Logo" />
+    </div>
+    <p class="footer__copyright">&copy; 2024 Company Name. All rights reserved.</p>
+    <div>
+      <img src="../imgs/Group 1.png" alt="Company Logo" />
+      <img src="../imgs/Group 2.png" alt="Company Logo" />
+    </div>
+  </footer>
+  
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close" id="cancelButton">&times;</span>
+      <h2>Heading 2</h2>
+      <p class="customer__description-popup">An anniversary is the date on which an event took place or an institution was founded in a previous year, and may also refer to the commemoration or</p>
+      <div id="formContainer" class="hidden">
+        <form id="customerForm" class="submit__form">
+          <label for="name">Full Name *</label>
+          <input class="input__form" type="text" id="name" placeholder="Full Name" required />
+          <div class="submit__button">
+            <button class="confirm__button" type="button" id="confirmButton">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+
+<script src="./js/script.js"></script>
+</body>
+</html>
